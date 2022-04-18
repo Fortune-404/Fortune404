@@ -20,7 +20,7 @@
 
 ## Resources & Links
 
-___
+---
 
 MIT &copy; Fortune 404
 
