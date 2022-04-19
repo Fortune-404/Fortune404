@@ -1,0 +1,11 @@
+button{
+    background-color: black;
+    color: white;
+    margin: 25% 50%;
+}
+li {
+    font-size: 25px;
+    list-style: none;
+    text-align: center;
+    color: blue;
+}
