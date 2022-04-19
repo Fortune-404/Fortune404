@@ -12,12 +12,22 @@ let shakeButton = document.getElementById('shake');
 shakeButton.addEventListener('click', randAnswer);
 
 function randAnswer (){
+
+  console.log('button was clicked');
+
   let ballAnswerIndexPos = Math.floor(Math.random() * magicAnswers.length);
-  console.log(ballAnswerIndexPos, 'generated answer');
+
+  console.log(ballAnswerIndexPos, 'generated answer index num');
+
+  let actualAnswer = magicAnswers[ballAnswerIndexPos];
+
+  console.log(actualAnswer, 'actual answer');
+
   let ul = document.getElementById('answerSpace');
   ul.innerHTML = '';
   let li = document.createElement('li');
-  li.textcontent = ballAnswerIndexPos;
+  li.textContent = actualAnswer;
+  ul.appendChild(li);
 
 
 }
