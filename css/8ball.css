@@ -13,16 +13,42 @@ button{
     text-align: center;
     position: relative;
 }
-#backBall{
-    margin: auto;
-    width: 660px;
+#backBall {
+    /* margin: auto;
+    width: 685px; */
+    animation: shakeImg 0.5s;
+    animation-iteration-count: infinite;
 }
+img{
+    margin: auto;
+    width: 685px;
+}
+/* .stop {
+    margin: auto;
+    width: 685px;
+    animation: shakeImg 0.5s;
+    animation-iteration-count: 1;
+}  */
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 li {
-    font-size: 40px;
+    font-size: 36px;
     list-style: none;
     color: white;
     position: absolute;
-    top: 450px;
+    top: 465px;
     right: 500px;
     left: 500px;
+    animation: fadeIn linear 4.5s;
 }
+ @keyframes shakeImg {
+    0% { transform: translate(1px, 1px) rotate(5deg); }
+    20% { transform: translate(-3px, 0px) rotate(10deg); }
+    30% { transform: translate(3px, 2px) rotate(-10deg); }
+    50% { transform: translate(-1px, 2px) rotate(-20deg); }
+    70% { transform: translate(3px, 1px) rotate(-25deg); }
+    90% { transform: translate(1px, 2px) rotate(10deg); }
+    100% { transform: translate(1px, -2px) rotate(-10deg); }
+ }
