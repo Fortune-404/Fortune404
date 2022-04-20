@@ -1,0 +1,20 @@
+button{
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    color: white;
+}
+#eightBall{
+    padding-top: 200px;
+    text-align: center;
+}
+li {
+    font-size: 25px;
+    list-style: none;
+    color: white;
+    background-color: blue;
+    width: fit-content;
+}
+#answerSpace{
+    padding-left: 50%;
+}
