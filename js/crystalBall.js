@@ -18,14 +18,32 @@ const loveResponses = [
   'Look deep in your heart to find the answer.'
 ];
 
-function Category(userInput, questions, responses){
-  this.userInput = userInput;
-  this.questions = [];
-  this.responses = [];
+// function Category(userInput, questions, responses){
+//   this.userInput = userInput;
+//   this.questions = [];
+//   this.responses = [];
 
 
 
+// }
+function loveDropdown(){
+    
 }
 
 
-document.getElementById('catButton').addEventListener('click',)
+
+function onClickLove(){
+  let response = Math.floor(Math.random() * loveQuestions.length);
+  console.log(response);
+
+}
+
+// *cat is shorthand for category
+let catLove = document.getElementById('clickLove');
+catLove.addEventListener('click', onClickLove);
+
+// let catCareer = document.getElementById('clickCareer');
+// catCareer.addEventListener('click', onClickCareer);
+
+// let catGeneral = document.getElementById('clickGeneral');
+// catGeneral.addEventListener('click', onClickGeneral);
