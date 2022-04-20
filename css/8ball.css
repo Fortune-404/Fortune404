@@ -1,20 +1,28 @@
+body{
+    margin: auto;
+    max-width: 1200px;
+}
 button{
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     background-color: black;
     color: white;
 }
 #eightBall{
-    padding-top: 200px;
+    padding-top: 50px;
     text-align: center;
+    position: relative;
+}
+#backBall{
+    margin: auto;
+    width: 660px;
 }
 li {
-    font-size: 25px;
+    font-size: 40px;
     list-style: none;
     color: white;
-    background-color: blue;
-    width: fit-content;
-}
-#answerSpace{
-    padding-left: 50%;
+    position: absolute;
+    top: 450px;
+    right: 500px;
+    left: 500px;
 }

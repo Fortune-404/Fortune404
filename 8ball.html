@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Magic 8 Ball</title>
-		<link rel="stylesheet" href="css/reset.css" />        
-		<link rel="stylesheet" href="css/sideNav.css" />
-		<link rel="stylesheet" href="css/8ball.css">
-	</head>
-	<header>
-		<nav>
-			<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+    <head>
+        <meta charset="utf-8" />
+        <title>Magic 8 Ball</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/sideNav.css" />
+        <link rel="stylesheet" href="css/8ball.css">
+    </head>
+    <header>
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
                 </a>
-				<a href="index.html">Index</a>
-				<a href="aboutUs.html">About Us</a>
-				<a href="8ball.html">Magic 8 Ball</a>
-			</div>
-			<!-- * This can be changed to any html element, it is merely a placeholder -->
-			<span onclick="openNav()">Navigation</span>
-		</nav>
-	</header>
+                <a href="index.html">Index</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="8ball.html">Magic 8 Ball</a>
+            </div>
+            <!-- * This can be changed to any html element, it is merely a placeholder -->
+            <span onclick="openNav()">Navigation</span>
+        </nav>
+    </header>
     <main>
-		<section id="eightBall">
-        	<button type="button" id="shake">Shake the 8 ball</button>
-		</section>
-			<ul id="answerSpace">
-				<li></li>
-			</ul>
+        <section id="eightBall">
+            <button type="button" id="shake">Shake the 8 ball</button>
+        
+						<img src="images/14-142815_magic-eight-ball-magic-8-ball-background.png" alt="magic 8 ball" id="backBall">
+        		<ul id="answerSpace">
+            		<li>40fortune not found</li>
+        		</ul>
+				</section>
     </main>
-	<body>
-		<script src="js/sideNav.js" async defer></script>
+    <body>
+        <script src="js/sideNav.js" async defer></script>
         <script src="js/app.js" async defer></script>
-	</body>
+    </body>
 </html>
