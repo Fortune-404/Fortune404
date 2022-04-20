@@ -1,8 +1,7 @@
 body {
   background-color: #A598A6;
-  background-image: url("images/backgroundBall.png");
+  background-image: url("../images/backgroundBall.png");
 }
-
 
 h1 {
   font-family: 'Diplomata SC', cursive;
