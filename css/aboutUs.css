@@ -7,6 +7,8 @@ body {
   width:1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #A598A6;
+  background-image: url("../images/backgroundBall.png");
 }
 
 header, main, footer {
@@ -28,7 +30,7 @@ header, main, footer {
 h1 {
   display: grid;
   grid-area: header;
-  font-family: Lovecraft;
+  font-family: Yipes;
   font-size: 40px;
 }
 
@@ -45,7 +47,8 @@ h1 {
 .column {
   height: 600px;
   border-radius: 40px;
-  box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.2);
+  background-color: rgb(250,250,250);
+  box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.3);
   padding: 15px;
   margin: 5px;
 }
