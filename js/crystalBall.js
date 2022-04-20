@@ -27,7 +27,26 @@ const loveResponses = [
 
 // }
 function loveDropdown(){
-    
+
+  let dropContainer = document.getElementById('love-container');
+  let dropList = document.createElement('select');
+  dropContainer.appendChild(dropList);
+  //   console.log({loveQuestions});
+
+  for (let i = 0; i < loveQuestions.length; i++) {
+    let options = loveQuestions[i];
+    let dropOptions = document.createElement('option');
+    // console.log(dropOptions);
+    dropOptions.innerHTML = options;
+    dropList.appendChild(dropOptions);
+    // console.log(dropOptions);
+    // dropList.addEventListener('click', displayAnswer)
+
+  }
+
+
+
+
 }
 
 
@@ -35,7 +54,7 @@ function loveDropdown(){
 function onClickLove(){
   let response = Math.floor(Math.random() * loveQuestions.length);
   console.log(response);
-
+  loveDropdown();
 }
 
 // *cat is shorthand for category
