@@ -35,7 +35,7 @@ function randAnswer (){
   ul.appendChild(li);
 }
 function shakeAgain(){
-  let secondBall = document.getElementsB('img');
-  secondBall.classList.add('backClass');
-  // window.location.reload();
+  // let secondBall = document.getElementsB('img');
+  // secondBall.classList.add('backClass');
+  window.location.reload();
 }
