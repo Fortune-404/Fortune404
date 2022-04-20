@@ -1,0 +1,40 @@
+body {
+  background-color: #A598A6;
+  background-image: url("/Fortune404/images/backgroundBall.png");
+}
+
+
+h1 {
+  font-family: 'Diplomata SC', cursive;
+  color: #FDF8E2;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-family: 'Diplomata SC', cursive;
+  color: #FDF8E2;
+  font-size: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+ margin-left: auto;
+ margin-right: auto;
+}
+#crystalball {
+  width: 600px;
+  margin-bottom: 200px;
+}
+#questionmarks {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+
+
