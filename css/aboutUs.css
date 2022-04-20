@@ -29,6 +29,7 @@ h1{
   display: grid;
   grid-area: header;
   font-family: Lovecraft;
+  font-size: 40px;
 }
 
 .container {
