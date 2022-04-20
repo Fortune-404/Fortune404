@@ -1,7 +1,30 @@
 body {
-  color: A598A6;
+  background-color: #A598A6;
 }
 
 h1 {
   font-family: 'Diplomata SC', cursive;
+  color: #FDF8E2;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
 }
+
+h2 {
+  font-family: 'Diplomata SC', cursive;
+  color: #FDF8E2;
+  font-size: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+ margin-left: 350px;
+
+
+}
+
+
