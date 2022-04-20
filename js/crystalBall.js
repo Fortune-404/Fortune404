@@ -40,13 +40,25 @@ function loveDropdown(){
     dropOptions.innerHTML = options;
     dropList.appendChild(dropOptions);
     // console.log(dropOptions);
-    // dropList.addEventListener('click', displayAnswer)
-
+    // ! ADD THIS AFTER CSS IS FINISHED dropList.addEventListener('click', displayAnswer)
   }
+}
+function careerDropdown(){
 
+  let dropContainer = document.getElementById('career-container');
+  let dropList = document.createElement('select');
+  dropContainer.appendChild(dropList);
+  //   console.log({loveQuestions});
 
-
-
+  for (let i = 0; i < loveQuestions.length; i++) {
+    let options = careerQuestions[i];
+    let dropOptions = document.createElement('option');
+    // console.log(dropOptions);
+    dropOptions.innerHTML = options;
+    dropList.appendChild(dropOptions);
+    // console.log(dropOptions);
+    // dropList.addEventListener('click', displayAnswer)
+  }
 }
 
 
