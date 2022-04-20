@@ -2,3 +2,8 @@
   font-family: LetterMagic;
   src: url(/css/font/LetterMagic.ttf);
 }
+
+@font-face {
+  font-family: Lovecraft;
+  src: url(/css/font/Lovecraft.ttf);
+}
