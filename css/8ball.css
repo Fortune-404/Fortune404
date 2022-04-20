@@ -1,20 +1,51 @@
+body{
+    margin: auto;
+    max-width: 1200px;
+}
 button{
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     background-color: black;
     color: white;
 }
 #eightBall{
-    padding-top: 200px;
+    padding-top: 50px;
     text-align: center;
+    position: relative;
+}
+@keyframes shakeImg {
+    0% { transform: translate(1px, 1px) rotate(5deg); }
+    20% { transform: translate(-3px, 0px) rotate(10deg); }
+    30% { transform: translate(3px, 2px) rotate(-10deg); }
+    50% { transform: translate(-1px, 2px) rotate(-20deg); }
+    70% { transform: translate(3px, 1px) rotate(-25deg); }
+    90% { transform: translate(1px, 2px) rotate(10deg); }
+    100% { transform: translate(1px, -2px) rotate(-10deg); }
+}
+
+#backBall {
+    animation: shakeImg 0.5s;
+    animation-iteration-count: infinite;
+}
+.backClass{
+    animation: shakeImg 0.5s;
+    animation-iteration-count: infinite;
+}
+img{
+    margin: auto;
+    width: 685px;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 li {
-    font-size: 25px;
+    font-size: 45px;
     list-style: none;
     color: white;
-    background-color: blue;
-    width: fit-content;
-}
-#answerSpace{
-    padding-left: 50%;
+    position: absolute;
+    top: 485px;
+    right: 500px;
+    left: 500px;
+    animation: fadeIn linear 4.5s;
 }
