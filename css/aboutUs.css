@@ -3,40 +3,49 @@
   text-align: center;
 }
 
-header, main, footer {
-  margin-top: 10px;
-  margin-right: auto;
-  margin-bottom: 10px;
+body{
+  width:1200px;
   margin-left: auto;
+  margin-right: auto;
 }
 
-nav {
+header, main, footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* nav {
   float: left;
-}
-
-nav::after {
-  clear: both;
-}
+} */
 
 #nav-btn{
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   background-color: 111;
-  padding: 10px 15px;
   border-radius: 40px;
   background-color: rgba(160, 160, 160, 0.1);
   box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.2);
 }
 
-header h1{
-  display: inline;
+/* nav::after {
+  clear: both;
+} */
+
+h1{
+  display: grid;
+  grid-area: header;
   font-family: Lovecraft;
 }
 
 .container {
   padding-top: 20px;
+  padding-bottom: 20px;
   display: grid;
-  grid-template-areas: 'left middle right';
-  grid-column-gap: 2px;
+  grid-template-areas:
+    'header header header'
+    'left middle right'
+    'left middle right';
 }
 
 .column {
