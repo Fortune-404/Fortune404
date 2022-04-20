@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>About</title>
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/sideNav.css" />
-		<link rel="stylesheet" href="css/reset.css" />
-	</head>
-	<body>
-		<header>
-			<nav>
-				<!--  This is the navigation for each page -->
 
-				<div id="mySidenav" class="sidenav">
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-						>&times;</a
-					>
-					<a href="index.html">Index</a>
-					<a href="aboutUs.html">About Us</a>
-					<a href="8ball.html">Magic 8 Ball</a>
-				</div>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>About</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/font/font.css">
+	<link rel="stylesheet" href="css/sideNav.css" />
+	<link rel="stylesheet" href="css/aboutUs.css" />
+</head>
 
-				<!-- * This can be changed to any html element, it is merely a placeholder -->
-				<span onclick="openNav()">Navigation</span>
-			</nav>
-		</header>
+<body>
+	<header>
+		<nav>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="index.html">Index</a>
+				<a href="aboutUs.html">About Us</a>
+				<a href="8ball.html">Magic 8 Ball</a>
+			</div>
+			<div onclick="openNav()" id="nav-btn">&#9776;</div>
+		</nav>
+	</header>
 
-		<main></main>
+	<main>
 
-		<footer></footer>
-		<script src="js/sideNav.js" async defer></script>
-	</body>
+		<div class="container">
+			<h1>ABOUT US</h1>
+			<div class="column" id="left">
+				<h2>Jack</h2>
+				<img src="https://dummyimage.com/200/fff/aaa" alt="placeholder image" class="about-img" id="img1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					magna aliqua. Ullamcorper dignissim cras tincidunt lobortis feugiat. Nisl rhoncus mattis rhoncus urna neque
+					viverra justo. Tempus iaculis urna id volutpat. Nisi quis eleifend quam adipiscing vitae proin. Tempor commodo
+					ullamcorper a lacus vestibulum sed. Nibh venenatis cras sed felis. Proin sed libero enim sed faucibus turpis
+					in. Id aliquet risus feugiat in ante metus dictum at tempor.</p>
+			</div>
+			<div class="column" id="middle">
+				<h2>Mike</h2>
+				<img src="https://dummyimage.com/200/fff/aaa" alt="placeholder image" class="about-img" id="img2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					magna aliqua. Ullamcorper dignissim cras tincidunt lobortis feugiat. Nisl rhoncus mattis rhoncus urna neque
+					viverra justo. Tempus iaculis urna id volutpat. Nisi quis eleifend quam adipiscing vitae proin. Tempor commodo
+					ullamcorper a lacus vestibulum sed. Nibh venenatis cras sed felis. Proin sed libero enim sed faucibus turpis
+					in. Id aliquet risus feugiat in ante metus dictum at tempor.</p>
+			</div>
+			<div class="column" id="right">
+				<h2>Susan</h2>
+				<img src="https://dummyimage.com/200/fff/aaa" alt="placeholder image" class="about-img" id="img3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					magna aliqua. Ullamcorper dignissim cras tincidunt lobortis feugiat. Nisl rhoncus mattis rhoncus urna neque
+					viverra justo. Tempus iaculis urna id volutpat. Nisi quis eleifend quam adipiscing vitae proin. Tempor commodo
+					ullamcorper a lacus vestibulum sed. Nibh venenatis cras sed felis. Proin sed libero enim sed faucibus turpis
+					in. Id aliquet risus feugiat in ante metus dictum at tempor.</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p class="text-center text-muted">&copy;2022</p>
+	</footer>
+	<script src="js/sideNav.js" async defer></script>
+</body>
+
 </html>
