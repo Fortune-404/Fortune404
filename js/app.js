@@ -19,9 +19,11 @@ reshakeButton.addEventListener('click', shakeAgain);
 function randAnswer (){
   // console.log('button was clicked');
 
+  // stops the shaking
   let backBall = document.getElementById('backBall');
   backBall.removeAttribute('id');
 
+  // calculates answer
   let ballAnswerIndexPos = Math.floor(Math.random() * magicAnswers.length);
   let actualAnswer = magicAnswers[ballAnswerIndexPos];
   console.log(actualAnswer, 'actual answer');
@@ -33,7 +35,7 @@ function randAnswer (){
   ul.appendChild(li);
 }
 function shakeAgain(){
-  // let secondBall = document.getElementsByClassName('backBall');
-  // backBall.classList.remove('stop');
-  window.location.reload();
+  let secondBall = document.getElementsB('img');
+  secondBall.classList.add('backClass');
+  // window.location.reload();
 }

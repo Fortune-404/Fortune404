@@ -22,7 +22,12 @@ button{
     90% { transform: translate(1px, 2px) rotate(10deg); }
     100% { transform: translate(1px, -2px) rotate(-10deg); }
 }
+
 #backBall {
+    animation: shakeImg 0.5s;
+    animation-iteration-count: infinite;
+}
+.backClass{
     animation: shakeImg 0.5s;
     animation-iteration-count: infinite;
 }
