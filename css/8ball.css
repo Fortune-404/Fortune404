@@ -70,5 +70,6 @@ img{
     animation: fadeIn linear 4.5s;
 }
 #questSpace{
+    list-style: none;
     font-size: x-large;
 }
