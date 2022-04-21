@@ -131,7 +131,7 @@ function loveDropdown(){
     dropOptions.innerHTML = options;
     dropList.appendChild(dropOptions);
     // console.log(dropOptions);
-    // ! ADD THIS AFTER CSS IS FINISHED dropList.addEventListener('click', displayAnswer)
+    dropList.addEventListener('click', displayAnswer);
   }
 }
 function careerDropdown(){
@@ -148,7 +148,7 @@ function careerDropdown(){
     dropOptions.innerHTML = options;
     dropList.appendChild(dropOptions);
     // console.log(dropOptions);
-    // dropList.addEventListener('click', displayAnswer)
+    dropList.addEventListener('click', displayAnswer);
   }
 }
 
@@ -166,7 +166,7 @@ function generalDropdown(){
     dropOptions.innerHTML = options;
     dropList.appendChild(dropOptions);
     // console.log(dropOptions);
-    // dropList.addEventListener('click', displayAnswer)
+    dropList.addEventListener('click', displayAnswer);
   }
 }
 
