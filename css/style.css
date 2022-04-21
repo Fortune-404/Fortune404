@@ -16,19 +16,19 @@ header, main, footer {
 }
 
 h1 {
-  font-family: 'Diplomata SC', cursive;
-  color: #FDF8E2;
+  font-family: DiplomataSC;
   font-size: 70px;
-  text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.5);
+  color: #37323e;
+  text-shadow: 0 0 15px #FDF8E2;
   display: flex;
   justify-content: center;
 }
 
 h2 {
-  font-family: 'Diplomata SC', cursive;
-  color: #FDF8E2;
-  font-size: 65px;
-  text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.5);
+  font-family: DiplomataSC;
+  font-size: 60px;
+  color: #37323e;
+  text-shadow: 0 0 15px #FDF8E2;
   display: flex;
   justify-content: center;
 }
@@ -40,7 +40,8 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50px;
-  outline: solid #0000000a;
+  outline: solid #37323e8d;
+  box-shadow: 0 0 15px #FDF8E2;
 }
 
 #crystalball {
