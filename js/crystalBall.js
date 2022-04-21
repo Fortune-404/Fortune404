@@ -18,14 +18,12 @@ const loveResponses = [
   'Look deep in your heart to find the answer.'
 ];
 
-// function Category(userInput, questions, responses){
-//   this.userInput = userInput;
-//   this.questions = [];
-//   this.responses = [];
+const careerQuestions = [];
+const careerResponses = [];
 
+const generalQuestions = [];
+const generalResponses = [];
 
-
-// }
 function loveDropdown(){
 
   let dropContainer = document.getElementById('love-container');
@@ -48,9 +46,9 @@ function careerDropdown(){
   let dropContainer = document.getElementById('career-container');
   let dropList = document.createElement('select');
   dropContainer.appendChild(dropList);
-  //   console.log({loveQuestions});
+  //   console.log({careerQuestions});
 
-  for (let i = 0; i < loveQuestions.length; i++) {
+  for (let i = 0; i < careerQuestions.length; i++) {
     let options = careerQuestions[i];
     let dropOptions = document.createElement('option');
     // console.log(dropOptions);
@@ -61,6 +59,23 @@ function careerDropdown(){
   }
 }
 
+function generalDropdown(){
+
+  let dropContainer = document.getElementById('general-container');
+  let dropList = document.createElement('select');
+  dropContainer.appendChild(dropList);
+  //   console.log({generalQuestions});
+
+  for (let i = 0; i < generalQuestions.length; i++) {
+    let options = generalQuestions[i];
+    let dropOptions = document.createElement('option');
+    // console.log(dropOptions);
+    dropOptions.innerHTML = options;
+    dropList.appendChild(dropOptions);
+    // console.log(dropOptions);
+    // dropList.addEventListener('click', displayAnswer)
+  }
+}
 
 
 function onClickLove(){
@@ -69,12 +84,26 @@ function onClickLove(){
   loveDropdown();
 }
 
+function onClickCareer(){
+  let response = Math.floor(Math.random() * careerQuestions.length);
+  console.log(response);
+  careerDropdown();
+}
+
+function onClickGeneral(){
+  let response = Math.floor(Math.random() * generalQuestions.length);
+  console.log(response);
+  generalDropdown();
+}
+
+
+
 // *cat is shorthand for category
 let catLove = document.getElementById('clickLove');
 catLove.addEventListener('click', onClickLove);
 
-// let catCareer = document.getElementById('clickCareer');
-// catCareer.addEventListener('click', onClickCareer);
+let catCareer = document.getElementById('clickCareer');
+catCareer.addEventListener('click', onClickCareer);
 
-// let catGeneral = document.getElementById('clickGeneral');
-// catGeneral.addEventListener('click', onClickGeneral);
+let catGeneral = document.getElementById('clickGeneral');
+catGeneral.addEventListener('click', onClickGeneral);
