@@ -2,6 +2,9 @@
     box-sizing: border-box;
     text-align: center;
 }
+form{
+    text-align: center;
+}
 
 body {
 width:1200px;
@@ -43,7 +46,6 @@ button{
     90% { transform: translate(1px, 2px) rotate(10deg); }
     100% { transform: translate(1px, -2px) rotate(-10deg); }
 }
-
 #backBall {
     animation: shakeImg 0.5s;
     animation-iteration-count: infinite;
@@ -54,7 +56,7 @@ button{
 }
 img{
     margin: auto;
-    width: 685px;
+    width: 600px;
 }
 @keyframes fadeIn {
     0% {opacity:0;}
@@ -65,8 +67,11 @@ li {
     list-style: none;
     color: white;
     position: absolute;
-    top: 485px;
-    right: 500px;
-    left: 500px;
+    top: 400px;
+    /* right: 50%; */
+    left: 50%;
     animation: fadeIn linear 4.5s;
+}
+#reshake{
+    float: right;
 }
