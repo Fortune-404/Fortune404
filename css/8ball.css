@@ -13,7 +13,7 @@ body {
     background-color: #A598A6;
     background-image: url("../images/backgroundBall.png");
 }
-header, main, footer {
+header, main {
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -22,6 +22,10 @@ h1 {
   font-size: 70px;
   color: #37323e;
   text-shadow: 0 0 15px #FDF8E2;
+}
+label{
+    font-style: bold;
+    font-size: 30px;
 }
 button{
     font-size: 18px;
