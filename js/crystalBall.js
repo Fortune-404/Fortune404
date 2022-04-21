@@ -117,40 +117,69 @@ const generalResponses = [
 
 ];
 
-function randomResponse(){
+let responseType = '';
+
+function renderResponse(){
   let randomLove = Math.floor(Math.random() * loveResponses.length);
   console.log(randomLove);
   let randomCareer = Math.floor(Math.random() * careerResponses.length);
-  console.log(randomCareer);
+  // console.log(randomCareer);
   let randomGeneral = Math.floor(Math.random() * generalResponses.length);
-  console.log(randomGeneral);
-  
-  if (targe){
-
-  }
-
-
-
-};
-
-
-function loveDropdown(){
-
-  let dropContainer = document.getElementById('love-container');
-  let dropList = document.createElement('select');
-  dropContainer.appendChild(dropList);
-  //   console.log({loveQuestions});
-
-  for (let i = 0; i < loveQuestions.length; i++) {
-    let options = loveQuestions[i];
-    let dropOptions = document.createElement('option');
-    // console.log(dropOptions);
-    dropOptions.innerHTML = options;
-    dropList.appendChild(dropOptions);
-    // console.log(dropOptions);
-    dropOptions.addEventListener('click', randomResponse);
+  // console.log(randomGeneral);
+  if (responseType === 'love'){
+    console.log('the response is:', loveResponses[randomLove]);
   }
 }
+
+// const onClickOption = new CustomEvent('clicky', {
+//   bubbles: true,
+// });
+
+// function loveDropdown(){
+//   responseType = 'love';
+//   let dropContainer = document.getElementById('love-container');
+//   // dropContainer.innerHTML = '';
+//   let dropList = document.createElement('select');
+//   // dropList.addEventListener('click', renderResponse);
+
+//   for (let i = 0; i < loveQuestions.length; i++) {
+//     let options = loveQuestions[i];
+//     let dropOptions = document.createElement('option');
+//     dropOptions.innerHTML = options;
+//     dropList.appendChild(dropOptions);
+//     // dropOptions.addEventListener('onclick');
+//   }
+//   dropContainer.appendChild(dropList);
+// }
+
+function loveDropdown(){
+  responseType = 'love';
+  let dropContainer = document.getElementById('love-container');
+  //clear list each time
+  dropContainer.innerHTML = '';
+  let dropList = document.createElement('select');
+  dropList.setAttribute('onChange', 'getValue(this);');
+  //add id to select tag in html
+  dropList.setAttribute('id', 'giveMeOptionsValue');
+  for (let i = 0; i < loveQuestions.length; i++) {
+    let dropOptions = document.createElement('option');
+    //add value to options so that we can get the question from the select.
+    dropOptions.setAttribute('value', loveQuestions[i]);
+
+    let options = loveQuestions[i];
+    dropOptions.innerHTML = options;
+    dropList.appendChild(dropOptions);
+  }
+  dropContainer.appendChild(dropList);
+  document.getElementById('loveButton').addEventListener('click', renderResponse);
+}
+
+
+function getValue(option) {
+  console.log('option: ', option.value);
+  document.getElementById('loveButton').style.display = 'block';
+}
+
 function careerDropdown(){
 
   let dropContainer = document.getElementById('career-container');
@@ -186,27 +215,19 @@ function generalDropdown(){
     dropOptions.addEventListener('click', randomResponse);
   }
 
-  function renderResponse(){
-    EventTarget.
-  }
 }
 
 
+
 function onClickLove(){
-  let response = Math.floor(Math.random() * loveQuestions.length);
-  console.log(response);
   loveDropdown();
 }
 
 function onClickCareer(){
-  let response = Math.floor(Math.random() * careerQuestions.length);
-  console.log(response);
   careerDropdown();
 }
 
 function onClickGeneral(){
-  let response = Math.floor(Math.random() * generalQuestions.length);
-  console.log(response);
   generalDropdown();
 }
 
