@@ -117,6 +117,23 @@ const generalResponses = [
 
 ];
 
+function randomResponse(){
+  let randomLove = Math.floor(Math.random() * loveResponses.length);
+  console.log(randomLove);
+  let randomCareer = Math.floor(Math.random() * careerResponses.length);
+  console.log(randomCareer);
+  let randomGeneral = Math.floor(Math.random() * generalResponses.length);
+  console.log(randomGeneral);
+  
+  if (targe){
+
+  }
+
+
+
+};
+
+
 function loveDropdown(){
 
   let dropContainer = document.getElementById('love-container');
@@ -131,7 +148,7 @@ function loveDropdown(){
     dropOptions.innerHTML = options;
     dropList.appendChild(dropOptions);
     // console.log(dropOptions);
-    dropList.addEventListener('click', displayAnswer);
+    dropOptions.addEventListener('click', randomResponse);
   }
 }
 function careerDropdown(){
@@ -148,7 +165,7 @@ function careerDropdown(){
     dropOptions.innerHTML = options;
     dropList.appendChild(dropOptions);
     // console.log(dropOptions);
-    dropList.addEventListener('click', displayAnswer);
+    dropOptions.addEventListener('click', randomResponse);
   }
 }
 
@@ -166,7 +183,11 @@ function generalDropdown(){
     dropOptions.innerHTML = options;
     dropList.appendChild(dropOptions);
     // console.log(dropOptions);
-    dropList.addEventListener('click', displayAnswer);
+    dropOptions.addEventListener('click', randomResponse);
+  }
+
+  function renderResponse(){
+    EventTarget.
   }
 }
 
