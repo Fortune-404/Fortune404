@@ -4,6 +4,7 @@
 }
 form{
     text-align: center;
+    padding-bottom: 20px;
 }
 body {
     width:1200px;
@@ -16,6 +17,7 @@ header, main, footer {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 h1 {
   font-family: DiplomataSC;
   font-size: 70px;
@@ -23,13 +25,14 @@ h1 {
   text-shadow: 0 0 15px #FDF8E2;
 }
 button{
+    font-size: 20px;
     height: 120px;
     width: 120px;
     background-color: black;
     color: white;
 }
 #eightBall{
-    padding-top: 20px;
+    /* padding-top: 15px; */
     text-align: center;
     position: relative;
 }
@@ -53,22 +56,19 @@ button{
 img{
     margin: auto;
     width: 685px;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
 }
 li {
-    font-size: 45px;
+    font-size: 50px;
     list-style: none;
     color: white;
     position: absolute;
-    top: 455px;
+    top: 325px;
     right: 500px;
     left: 500px;
     animation: fadeIn linear 4.5s;
-}
-#reshake{
-    float: right;
 }
