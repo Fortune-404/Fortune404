@@ -119,15 +119,18 @@ const generalResponses = [
 
 let responseType = '';
 
+const cballList = document.getElementById('cballList');
+
 function renderResponse(){
   let randomLove = Math.floor(Math.random() * loveResponses.length);
-  console.log(randomLove);
+  // console.log(randomLove);
   let randomCareer = Math.floor(Math.random() * careerResponses.length);
   // console.log(randomCareer);
   let randomGeneral = Math.floor(Math.random() * generalResponses.length);
   // console.log(randomGeneral);
   if (responseType === 'love'){
     console.log('the response is:', loveResponses[randomLove]);
+    cballList.innerHTML = loveResponses[randomLove];
   }
 }
 

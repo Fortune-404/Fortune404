@@ -58,3 +58,16 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
+#textHolder {
+  text-align: center;
+  position: relative;
+}
+
+#cballList{
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
