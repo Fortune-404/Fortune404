@@ -1,0 +1,10 @@
+#nav-btn {
+  font-size: 30px;
+  text-align: center;
+  width: 45px;
+  padding: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(250, 250, 250, 0.8);
+  box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.2);
+}
