@@ -25,12 +25,14 @@ h2 {
   justify-content: center;
 }
 
-img {
+#home-image {
   width: 60vw;
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50px;
+  outline: solid #0000000a;
 }
 
 #crystalball {
