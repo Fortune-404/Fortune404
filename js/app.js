@@ -1,10 +1,15 @@
 'use strict';
 
 console.log('app.js file is connected');
+
+// let emptNull = 'eeeee';
+// const emptyString =JSON.stringify(emptNull);
+//   localStorage.setItem('questions', emptyString);
+
 const questArray = [];
 let questRetrieve = JSON.parse(localStorage.getItem('questions'));
-// questArray.push(questRetrieve);
-questRetrieve.push(questArray);
+questArray.push(questRetrieve);
+// questRetrieve.push(questArray);
 const magicAnswers = ['Yes', 'No', 'Maybe'];
 
 
@@ -39,7 +44,7 @@ function randAnswer (){
   // pushes text string to array
   questArray.push(questions);
 
-  const questionString =JSON.stringify(questRetrieve);
+  const questionString =JSON.stringify(questArray);
   localStorage.setItem('questions', questionString);
 }
 
@@ -61,5 +66,5 @@ function getOldList(){
     li.textContent = oldList;
     ul.appendChild(li);
     // puts text entered into variable questions
-    let questions = document.getElementById('question').value;
+    // let questions = document.getElementById('question').value;
   }
