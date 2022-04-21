@@ -4,36 +4,34 @@
 }
 form{
     text-align: center;
+    padding-bottom: 20px;
 }
-
 body {
-width:1200px;
-margin-left: auto;
-margin-right: auto;
-background-color: #A598A6;
-background-image: url("../images/backgroundBall.png");
+    width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A598A6;
+    background-image: url("../images/backgroundBall.png");
 }
-
 header, main, footer {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
 h1 {
   font-family: DiplomataSC;
   font-size: 70px;
   color: #37323e;
   text-shadow: 0 0 15px #FDF8E2;
 }
-
 button{
+    font-size: 18px;
     height: 120px;
     width: 120px;
     background-color: black;
     color: white;
 }
 #eightBall{
-    padding-top: 50px;
+    /* padding-top: 15px; */
     text-align: center;
     position: relative;
 }
@@ -56,22 +54,19 @@ button{
 }
 img{
     margin: auto;
-    width: 600px;
+    width: 685px;
 }
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
 }
 li {
-    font-size: 45px;
+    font-size: 50px;
     list-style: none;
     color: white;
     position: absolute;
-    top: 400px;
-    /* right: 50%; */
-    left: 50%;
+    top: 305px;
+    right: 500px;
+    left: 500px;
     animation: fadeIn linear 4.5s;
-}
-#reshake{
-    float: right;
 }
