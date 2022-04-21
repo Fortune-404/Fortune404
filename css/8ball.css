@@ -16,6 +16,13 @@ header, main, footer {
     margin-bottom: 10px;
 }
 
+h1 {
+  font-family: DiplomataSC;
+  font-size: 70px;
+  color: #37323e;
+  text-shadow: 0 0 15px #FDF8E2;
+}
+
 button{
     height: 120px;
     width: 120px;
