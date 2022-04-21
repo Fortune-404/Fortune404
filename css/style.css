@@ -37,7 +37,8 @@ h2 {
 
 #crystalball {
   width: 600px;
-  margin-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #questionmarks {
