@@ -36,7 +36,7 @@ h1 {
 }
 
 .column {
-  height: 600px;
+  height: 100%;
   border-radius: 40px;
   background-color: #A598A6;
   outline: solid #37323e6a;
@@ -45,9 +45,20 @@ h1 {
   margin: 5px;
 }
 
-.column img{
-  margin-left: auto;
-  margin-right: auto;
+.column h2 {
+  font-family: Yipes;
+  padding-bottom: 5px;
+  font-variant: small-caps;
+  font-size: 40px;
+}
+
+.column img {
+  border-radius: 15px;
+  display: inline;
+}
+
+.column p {
+  padding-top: 20px;
 }
 
 footer {
