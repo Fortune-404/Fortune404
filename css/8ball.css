@@ -2,6 +2,9 @@
     box-sizing: border-box;
     text-align: center;
 }
+form{
+    text-align: center;
+}
 body {
     width:1200px;
     margin-left: auto;
@@ -65,4 +68,7 @@ li {
     right: 500px;
     left: 500px;
     animation: fadeIn linear 4.5s;
+}
+#reshake{
+    float: right;
 }
