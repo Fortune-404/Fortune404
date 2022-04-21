@@ -7,6 +7,8 @@ body {
   width:1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #A598A6;
+  background-image: url("../images/backgroundBall.png");
 }
 
 header, main, footer {
@@ -14,26 +16,17 @@ header, main, footer {
   margin-bottom: 10px;
 }
 
-#nav-btn {
-  width: 50px;
-  padding: 0;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: 111;
-  background-color: rgba(189, 189, 189, 0.1);
-  box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.2);
-  font-size: 30px;
-}
-
 h1 {
   display: grid;
   grid-area: header;
-  font-family: Lovecraft;
-  font-size: 40px;
+  font-family: DiplomataSC;
+  font-size: 70px;
+  color: #37323e;
+  text-shadow: 0 0 15px #FDF8E2;
+  margin-top: 0;
 }
 
 .container {
-  padding-top: 20px;
   padding-bottom: 20px;
   display: grid;
   grid-template-areas:
@@ -43,11 +36,29 @@ h1 {
 }
 
 .column {
-  height: 600px;
+  height: 100%;
   border-radius: 40px;
-  box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.2);
+  background-color: #A598A6;
+  outline: solid #37323e6a;
+  box-shadow: 0 0 15px #FDF8E2;
   padding: 15px;
   margin: 5px;
+}
+
+.column h2 {
+  font-family: Yipes;
+  padding-bottom: 5px;
+  font-variant: small-caps;
+  font-size: 40px;
+}
+
+.column img {
+  border-radius: 15px;
+  display: inline;
+}
+
+.column p {
+  padding-top: 20px;
 }
 
 footer {

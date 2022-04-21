@@ -1,10 +1,31 @@
-body{
-    margin: auto;
-    max-width: 1200px;
+* {
+    box-sizing: border-box;
+    text-align: center;
 }
 form{
     text-align: center;
 }
+
+body {
+width:1200px;
+margin-left: auto;
+margin-right: auto;
+background-color: #A598A6;
+background-image: url("../images/backgroundBall.png");
+}
+
+header, main, footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+  font-family: DiplomataSC;
+  font-size: 70px;
+  color: #37323e;
+  text-shadow: 0 0 15px #FDF8E2;
+}
+
 button{
     height: 120px;
     width: 120px;

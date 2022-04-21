@@ -1,9 +1,24 @@
 @font-face {
   font-family: LetterMagic;
-  src: url(/css/font/LetterMagic.ttf);
+  src: url(LetterMagic.ttf);
 }
 
 @font-face {
   font-family: Lovecraft;
-  src: url(/css/font/Lovecraft.ttf);
+  src: url(Lovecraft.ttf);
+}
+
+@font-face {
+  font-family: Aquila;
+  src: url(Aquila.ttf);
+}
+
+@font-face {
+  font-family: Yipes;
+  src: url(yipes.ttf);
+}
+
+@font-face {
+  font-family: DiplomataSC;
+  src: url(DiplomataSC.ttf);
 }
