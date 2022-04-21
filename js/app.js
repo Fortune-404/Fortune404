@@ -7,9 +7,9 @@ console.log('app.js file is connected');
 //   localStorage.setItem('questions', emptyString);
 
 const questArray = [];
-// let questRetrieve = JSON.parse(localStorage.getItem('questions'));
-// questArray.push(questRetrieve);
-// questRetrieve.push(questArray);
+let questRetrieve = JSON.parse(localStorage.getItem('questions'));
+questArray.push(questRetrieve);
+questRetrieve.push(questArray);
 const magicAnswers = ['Yes', 'No', 'Maybe'];
 
 
