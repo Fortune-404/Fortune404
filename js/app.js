@@ -2,16 +2,10 @@
 
 console.log('app.js file is connected');
 
-// let emptNull = 'eeeee';
-// const emptyString =JSON.stringify(emptNull);
-//   localStorage.setItem('questions', emptyString);
-
 const questArray = [];
 // let questRetrieve = JSON.parse(localStorage.getItem('questions'));
 // questArray.push(questRetrieve);
-// questRetrieve.push(questArray);
 const magicAnswers = ['Yes', 'No', 'Maybe'];
-
 
 // links button to shakebutton variable
 let stopButton = document.getElementById('stop');
@@ -49,22 +43,17 @@ function randAnswer (){
 }
 
 function shakeAgain(){
-  // reloads page for game restart
-  // let newBall = document.getElementsByClassName('newB');
-  // newBall.setAttribute('id','backBall');
-  // let questRetrieve = JSON.parse(localStorage.getItem('questions'));
-  // questArray.push(questRetrieve);
   window.location.reload();
 }
+
 function getOldList(){
   let oldList = JSON.parse(localStorage.getItem('questions'));
-    // gives access to answer space in ball
-    let ul = document.getElementById('questSpace');
-    ul.innerHTML = '';
-    let li = document.createElement('li');
-    // puts actual answer on li element
-    li.textContent = oldList;
-    ul.appendChild(li);
-    // puts text entered into variable questions
-    // let questions = document.getElementById('question').value;
-  }
+  // gives access to answer space in ball
+  let ul = document.getElementById('questSpace');
+  ul.innerHTML = '';
+  let li = document.createElement('li');
+  // puts actual answer on li element
+  li.textContent = oldList;
+  ul.appendChild(li);
+  // puts text entered into variable questions
+}
