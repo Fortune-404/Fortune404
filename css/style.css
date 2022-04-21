@@ -67,7 +67,6 @@ h2 {
 #cballList{
   list-style: none;
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  top: 450px;
+  margin-left: 400px;
 }
