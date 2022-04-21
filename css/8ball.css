@@ -31,7 +31,6 @@ button{
     color: white;
 }
 #eightBall{
-    /* padding-top: 15px; */
     text-align: center;
     position: relative;
 }
@@ -60,13 +59,17 @@ img{
     0% {opacity:0;}
     100% {opacity:1;}
 }
-li {
+#answerSpace {
     font-size: 50px;
     list-style: none;
     color: white;
     position: absolute;
     top: 305px;
-    right: 500px;
+    right: 540px;
     left: 500px;
     animation: fadeIn linear 4.5s;
+}
+#questSpace{
+    list-style: none;
+    font-size: x-large;
 }
