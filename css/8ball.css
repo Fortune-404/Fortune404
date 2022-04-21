@@ -24,7 +24,7 @@ h1 {
   text-shadow: 0 0 15px #FDF8E2;
 }
 button{
-    font-size: 20px;
+    font-size: 18px;
     height: 120px;
     width: 120px;
     background-color: black;
@@ -55,7 +55,6 @@ button{
 img{
     margin: auto;
     width: 685px;
-    /* padding-bottom: 15px; */
 }
 @keyframes fadeIn {
     0% {opacity:0;}
@@ -66,7 +65,7 @@ li {
     list-style: none;
     color: white;
     position: absolute;
-    top: 325px;
+    top: 305px;
     right: 500px;
     left: 500px;
     animation: fadeIn linear 4.5s;
