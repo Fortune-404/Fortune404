@@ -54,6 +54,7 @@ const careerQuestions = [
   'Am I in the right field/career path?',
   'How can I communicate more effectively with my colleagues?'
 ];
+
 const careerResponses = [
   'I see great opportunities.',
   'You are your greatest asset.',
@@ -129,8 +130,15 @@ function renderResponse(){
   let randomGeneral = Math.floor(Math.random() * generalResponses.length);
   // console.log(randomGeneral);
   if (responseType === 'love'){
-    console.log('the response is:', loveResponses[randomLove]);
+    // console.log('the response is:', loveResponses[randomLove]);
     cballList.innerHTML = loveResponses[randomLove];
+  }
+  if (responseType === 'career'){
+    cballList.innerHTML = careerResponses[randomCareer];
+
+  }
+  if (responseType === 'general'){
+    cballList.innerHTML = generalResponses[randomGeneral];
   }
 }
 
@@ -177,47 +185,56 @@ function loveDropdown(){
   document.getElementById('loveButton').addEventListener('click', renderResponse);
 }
 
+function careerDropdown(){
+  responseType = 'career';
+  let dropContainer = document.getElementById('career-container');
+  //clear list each time
+  dropContainer.innerHTML = '';
+  let dropList = document.createElement('select');
+  dropList.setAttribute('onChange', 'getValue(this);');
+  //add id to select tag in html
+  dropList.setAttribute('id', 'giveMeOptionsValue');
+  for (let i = 0; i < careerQuestions.length; i++) {
+    let dropOptions = document.createElement('option');
+    //add value to options so that we can get the question from the select.
+    dropOptions.setAttribute('value', careerQuestions[i]);
+
+    let options = careerQuestions[i];
+    dropOptions.innerHTML = options;
+    dropList.appendChild(dropOptions);
+  }
+  dropContainer.appendChild(dropList);
+  document.getElementById('careerButton').addEventListener('click', renderResponse);
+}
+
+function generalDropdown(){
+  responseType = 'general';
+  let dropContainer = document.getElementById('general-container');
+  //clear list each time
+  dropContainer.innerHTML = '';
+  let dropList = document.createElement('select');
+  dropList.setAttribute('onChange', 'getValue(this);');
+  //add id to select tag in html
+  dropList.setAttribute('id', 'giveMeOptionsValue');
+  for (let i = 0; i < generalQuestions.length; i++) {
+    let dropOptions = document.createElement('option');
+    //add value to options so that we can get the question from the select.
+    dropOptions.setAttribute('value', generalQuestions[i]);
+
+    let options = generalQuestions[i];
+    dropOptions.innerHTML = options;
+    dropList.appendChild(dropOptions);
+  }
+  dropContainer.appendChild(dropList);
+  document.getElementById('generalButton').addEventListener('click', renderResponse);
+}
+
 
 function getValue(option) {
   console.log('option: ', option.value);
   document.getElementById('loveButton').style.display = 'block';
-}
-
-function careerDropdown(){
-
-  let dropContainer = document.getElementById('career-container');
-  let dropList = document.createElement('select');
-  dropContainer.appendChild(dropList);
-  //   console.log({careerQuestions});
-
-  for (let i = 0; i < careerQuestions.length; i++) {
-    let options = careerQuestions[i];
-    let dropOptions = document.createElement('option');
-    // console.log(dropOptions);
-    dropOptions.innerHTML = options;
-    dropList.appendChild(dropOptions);
-    // console.log(dropOptions);
-    dropOptions.addEventListener('click', randomResponse);
-  }
-}
-
-function generalDropdown(){
-
-  let dropContainer = document.getElementById('general-container');
-  let dropList = document.createElement('select');
-  dropContainer.appendChild(dropList);
-  //   console.log({generalQuestions});
-
-  for (let i = 0; i < generalQuestions.length; i++) {
-    let options = generalQuestions[i];
-    let dropOptions = document.createElement('option');
-    // console.log(dropOptions);
-    dropOptions.innerHTML = options;
-    dropList.appendChild(dropOptions);
-    // console.log(dropOptions);
-    dropOptions.addEventListener('click', randomResponse);
-  }
-
+  document.getElementById('careerButton').style.display = 'block';
+  document.getElementById('generalButton').style.display = 'block';
 }
 
 
