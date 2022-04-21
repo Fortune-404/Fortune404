@@ -1,39 +1,60 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #A598A6;
   background-image: url("../images/backgroundBall.png");
 }
 
+header, main, footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 h1 {
-  font-family: 'Diplomata SC', cursive;
-  color: #FDF8E2;
+  font-family: DiplomataSC;
   font-size: 70px;
+  color: #37323e;
+  text-shadow: 0 0 15px #FDF8E2;
   display: flex;
   justify-content: center;
+  padding-bottom: 0;
 }
 
 h2 {
-  font-family: 'Diplomata SC', cursive;
-  color: #FDF8E2;
-  font-size: 65px;
+  margin-top: 0;
+  padding-top: 0;
+  font-family: DiplomataSC;
+  font-size: 60px;
+  color: #37323e;
+  text-shadow: 0 0 15px #FDF8E2;
   display: flex;
   justify-content: center;
 }
 
-img {
+#home-image {
   width: 60vw;
   display: flex;
   justify-content: center;
- margin-left: auto;
- margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  outline: solid #37323e8d;
+  box-shadow: 0 0 15px #FDF8E2;
 }
+
 #crystalball {
   width: 600px;
-  margin-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 #questionmarks {
   width: 50vw;
   display: flex;
   justify-content: center;
 }
-
-

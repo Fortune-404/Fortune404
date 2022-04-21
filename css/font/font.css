@@ -17,3 +17,8 @@
   font-family: Yipes;
   src: url(yipes.ttf);
 }
+
+@font-face {
+  font-family: DiplomataSC;
+  src: url(DiplomataSC.ttf);
+}

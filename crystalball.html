@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Cinzel&family=Diplomata+SC&family=Kanit:wght@700&family=Montserrat:wght@589&family=Orbitron:wght@500;900&family=Oswald:wght@600&family=Source+Sans+Pro:wght@200&family=Yellowtail&display=swap" rel="stylesheet">
-  </head>
-  <header>
-    <nav>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
-            </a>
-            <a href="index.html">Index</a>
-            <a href="aboutUs.html">About Us</a>
-            <a href="8ball.html">Magic 8 Ball</a>
-            <a href="crystalball.html">Crystal Ball</a>
-        </div>
-        <!-- * This can be changed to any html element, it is merely a placeholder -->
-        <span onclick="openNav()">Navigation</span>
-    </nav>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Crystal Ball | Fortune 404</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/font/font.css">
+  <link rel="stylesheet" href="css/nav-button.css">
+  <link rel="stylesheet" href="css/sideNav.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://bit.ly/3MgkjEY">
+</head>
+<header>
+  <nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+      </a>
+      <a href="index.html">Home</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="8ball.html">Magic 8 Ball</a>
+      <a href="crystalball.html">Crystal Ball</a>
+    </div>
+    <div onclick="openNav()" id="nav-btn">&#9776;</div>
+  </nav>
 </header>
-  <body>
-    <h2>Crystal Ball</h2>
-    <img id="crystalball" src="images/croppedCrystalball.png" alt="crystalball" width="" height="">
 
+<body>
+  <main>
+    <h1>Crystal Ball</h1>
+    <img id="crystalball" src="images/croppedCrystalball.png" alt="crystalball">
+  </main>
+  <footer></footer>
+  <script src="js/sideNav.js" async defer></script>
+</body>
 
-    <script src="" async defer></script>
-  </body>
 </html>
