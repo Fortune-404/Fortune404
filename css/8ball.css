@@ -21,7 +21,6 @@ header, main, footer {
   font-family: DiplomataSC;
   font-size: 70px;
   color: rgb(35 30 55 / 70%);
-  /* text-shadow: 0 0 15px #FDF8E2; */
 } 
 button{
     font-size: 18px;
@@ -71,5 +70,9 @@ img{
 }
 #questSpace{
     list-style: none;
-    font-size: x-large;
+    font-size: 35px;
+    /* display: inline; */
+}
+label{
+    font-size: 30px;
 }
