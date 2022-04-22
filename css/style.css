@@ -19,7 +19,6 @@ h1 {
   font-family: DiplomataSC;
   font-size: 70px;
   color: rgb(35 30 55 / 70%);
-  /* text-shadow: 0 0 15px #FDF8E2; */
   display: flex;
   justify-content: center;
   padding-bottom: 0;
@@ -31,7 +30,6 @@ h2 {
   font-family: DiplomataSC;
   font-size: 60px;
   color: rgb(35 30 55 / 70%);
-  /* text-shadow: 0 0 15px #FDF8E2; */
   display: flex;
   justify-content: center;
 }
@@ -57,4 +55,46 @@ h2 {
   width: 50vw;
   display: flex;
   justify-content: center;
+}
+
+#textHolder {
+  text-align: center;
+  position: relative;
+}
+
+#cballList{
+  width: 325px;
+  text-align: center;
+  position: absolute;
+  top: 450px;
+  margin-left: 450px;
+  font-size: 20px;
+  font-family: Lovecraft;
+  src: url(Lovecraft.ttf);
+  background: -webkit-linear-gradient(rgb(104, 19, 107), rgb(224, 78, 193));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main button{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+  border: 2px solid #FDF8E2;
+  margin-bottom: 20px;
+  background-color: rgb(158, 55, 141);
+  border-radius: 10px;
+  width: 100px;
+  height: 75px;
+  color: rgb(255, 238, 249);
+
+}
+
+#buttonContainer {
+  display: flex;
+  margin-left: 50px;
+  justify-content: center;
+  gap: 30px;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: Lovecraft;
+  src: url(Lovecraft.ttf)
 }

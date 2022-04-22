@@ -18,6 +18,17 @@
   <link rel="stylesheet" href="css/sideNav.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://bit.ly/3MgkjEY">
+  <style>
+    #loveButton {
+      display: none;
+    }
+    #careerButton {
+      display: none;
+    }
+    #generalButton{
+      display: none;
+    }
+  </style>
 </head>
 <header>
   <nav>
@@ -36,9 +47,29 @@
 <body>
   <main>
     <h1>Crystal Ball</h1>
+    <section id="textHolder">
     <img id="crystalball" src="images/croppedCrystalball.png" alt="crystalball">
+    </section>
+    <span id="cballList">
+      
+    </span>
+    <section id="buttonContainer">
+      <button class="dropbtn" id="clickLove">Love</button>
+      <section id="love-container"></section>
+      <button id="loveButton">Get Your Fortune!</button>
+
+      <button class="dropbtn" id="clickCareer">Career</button>
+      <section id="career-container"></section>
+      <button id="careerButton">Get Your Fortune!</button>
+
+      <button class="dropbtn" id="clickGeneral">General</button>
+      <section id="general-container"></section>
+      <button id="generalButton">Get Your Fortune!</button>
+  </section>
   </main>
+
   <footer></footer>
+  <script src="js/crystalBall.js" async defer></script>
   <script src="js/sideNav.js" async defer></script>
 </body>
 
