@@ -2,40 +2,69 @@
 
 console.log('app.js file is connected');
 
-// array of answers
+// let emptNull = 'eeeee';
+// const emptyString =JSON.stringify(emptNull);
+//   localStorage.setItem('questions', emptyString);
+
+const questArray = [];
+// let questRetrieve = JSON.parse(localStorage.getItem('questions'));
+// questArray.push(questRetrieve);
+// questRetrieve.push(questArray);
 const magicAnswers = ['Yes', 'No', 'Maybe'];
+
 
 // links button to shakebutton variable
 let stopButton = document.getElementById('stop');
-// let answerButton = document.getElementById('backBall');
-
 // assigns randAnswer func to button click through linked shakebutton
 stopButton.addEventListener('click', randAnswer);
-
+// assigns reshake to button
 let reshakeButton = document.getElementById('reshake');
 reshakeButton.addEventListener('click', shakeAgain);
 
+let listButton = document.getElementById('showList');
+listButton.addEventListener('click', getOldList);
+
 // function to randomly generate an answer and display it
 function randAnswer (){
-  // console.log('button was clicked');
-
   // stops the shaking
   let backBall = document.getElementById('backBall');
   backBall.removeAttribute('id');
-
   // calculates answer
-  let ballAnswerIndexPos = Math.floor(Math.random() * magicAnswers.length);
-  let actualAnswer = magicAnswers[ballAnswerIndexPos];
+  let actualAnswer = magicAnswers[Math.floor(Math.random() * magicAnswers.length)];
   console.log(actualAnswer, 'actual answer');
-
+  // gives access to answer space in ball
   let ul = document.getElementById('answerSpace');
   ul.innerHTML = '';
   let li = document.createElement('li');
+  // puts actual answer on li element
   li.textContent = actualAnswer;
   ul.appendChild(li);
+  // puts text entered into variable questions
+  let questions = document.getElementById('question').value;
+  // pushes text string to array
+  questArray.push(questions);
+
+  const questionString =JSON.stringify(questArray);
+  localStorage.setItem('questions', questionString);
 }
+
 function shakeAgain(){
-  // let secondBall = document.getElementsB('img');
-  // secondBall.classList.add('backClass');
+  // reloads page for game restart
+  // let newBall = document.getElementsByClassName('newB');
+  // newBall.setAttribute('id','backBall');
+  // let questRetrieve = JSON.parse(localStorage.getItem('questions'));
+  // questArray.push(questRetrieve);
   window.location.reload();
 }
+function getOldList(){
+  let oldList = JSON.parse(localStorage.getItem('questions'));
+    // gives access to answer space in ball
+    let ul = document.getElementById('questSpace');
+    ul.innerHTML = '';
+    let li = document.createElement('li');
+    // puts actual answer on li element
+    li.textContent = oldList;
+    ul.appendChild(li);
+    // puts text entered into variable questions
+    // let questions = document.getElementById('question').value;
+  }
