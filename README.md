@@ -20,6 +20,8 @@
 
 ## Resources & Links
 
+[https://www.vecteezy.com/free-vector/victorian-label]Victorian Label Vectors by Vecteezy
+
 ---
 
 MIT &copy; Fortune 404
