@@ -4,6 +4,7 @@
 //user input, might want to use class?
 
 const loveQuestions = [
+  null,
   'Will I meet my soulmate?',
   'Will I have children?',
   'How many children will I have?',
@@ -34,6 +35,7 @@ const loveResponses = [
 ];
 
 const careerQuestions = [
+  null,
   'Will I have to work after I get married?',
   'Will I get a promotion?',
   'Will I be famous?',
@@ -73,6 +75,7 @@ const careerResponses = [
 ];
 
 const generalQuestions = [
+  null,
   'What are my lucky numbers?',
   'What color is my aura?',
   'What is my destiny? ',
