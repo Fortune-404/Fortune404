@@ -22,7 +22,10 @@ header, main, footer {
   font-size: 70px;
   color: rgb(35 30 55 / 70%);
 } 
-button{
+.buttonsCss {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+    border: 2px solid #FDF8E2;
+    border-radius: 10px;
     font-size: 18px;
     height: 120px;
     width: 120px;
@@ -70,7 +73,8 @@ img{
 }
 #questSpace{
     list-style: none;
-    font-size: 35px;
+    font-size: 45px;
+    font-style: bold;
 }
 label{
     font-size: 30px;
