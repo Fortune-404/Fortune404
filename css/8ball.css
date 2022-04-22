@@ -72,4 +72,5 @@ img{
 #questSpace{
     list-style: none;
     font-size: x-large;
+    display: inline;
 }
