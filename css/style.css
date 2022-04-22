@@ -70,3 +70,14 @@ h2 {
   top: 450px;
   margin-left: 400px;
 }
+
+main button{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+  border: 2px solid #FDF8E2;
+  margin-bottom: 20px;
+  background-color: rgb(158, 55, 141);
+  border-radius: 10px;
+  width: 100px;
+  height: 75px;
+
+}
