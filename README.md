@@ -21,6 +21,9 @@ VS Code, Github, HTML, CSS, and JS
 
 ## Resources & Links
 
+[https://www.vecteezy.com/free-vector/victorian-label]Victorian Label Vectors by Vecteezy
+
+---
 https://www.w3schools.com/howto/howto_js_sidenav.asp
 
 https://www.nicepng.com/ourpic/u2q8a9y3e6a9q8q8_magic-eight-ball-magic-8-ball-background/
