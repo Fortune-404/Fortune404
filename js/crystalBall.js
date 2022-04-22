@@ -30,6 +30,7 @@ const loveResponses = [
   '“Sometimes the heart sees what is invisible to the eye.”',
   'Love yourself first and everything else falls into line.',
   'Look deep in your heart to find the answer.',
+  '404: Not Found :('
 ];
 
 const careerQuestions = [
@@ -68,6 +69,7 @@ const careerResponses = [
   'I believe it 100% ',
   'Do what you love. The rest will fall into place.',
   'Unleash your inner potential and you will be unstoppable.',
+  '404: Not Found :('
 ];
 
 const generalQuestions = [
@@ -114,7 +116,8 @@ const generalResponses = [
   'There can only be one worst day ever, chances are it is not today.',
   'The early bird gets the worm, but the second mouse gets the cheese.',
   'A foolish man listens to his heart. A wise man listens to cookies.',
-  'Don’t pursue happiness – create it.'
+  'Don’t pursue happiness – create it.',
+  '404: Not Found :('
 
 ];
 
