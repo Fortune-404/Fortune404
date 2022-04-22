@@ -21,8 +21,8 @@ h1 {
   grid-area: header;
   font-family: DiplomataSC;
   font-size: 70px;
-  color: #37323e;
-  text-shadow: 0 0 15px #FDF8E2;
+  color: rgb(35 30 55 / 70%);
+  /* text-shadow: 0 0 15px #FDF8E2; */
   margin-top: 0;
 }
 
